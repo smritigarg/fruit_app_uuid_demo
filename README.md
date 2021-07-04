@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
 * Ruby version
+`ruby 2.5`
+`Rails 5`
 
-* System dependencies
+# System dependencies
+Refer to following guide to install docker on the system to get started quick 
+https://docs.docker.com/engine/install/
 
-* Configuration
+# Database creation
+ `Postgres DB`
 
-* Database creation
+# How to run the test suite
 
-* Database initialization
+A docker file has been provided with the project, to get the project up and running. 
+`docker-compose build app`
+`docker up`
 
-* How to run the test suite
+# Implementation
 
-* Services (job queues, cache servers, search engines, etc.)
+Two models are created apple.rb and banana.rb
+Apple and banana both have custom uuid as primary keys and apple refers to banana using its primary key.
 
-* Deployment instructions
+Relationships can be checked using `rails console`
 
-* ...
